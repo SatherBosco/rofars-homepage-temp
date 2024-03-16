@@ -1,33 +1,730 @@
-<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.webp"><meta name="generator" content="Astro v4.5.3"><title>Product</title><link rel="stylesheet" href="/_astro/index.BUuNiJOE.css" /></head> <body> <div class="Toastify"></div> <main>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();;(()=>{var v=Object.defineProperty;var A=(c,s,a)=>s in c?v(c,s,{enumerable:!0,configurable:!0,writable:!0,value:a}):c[s]=a;var d=(c,s,a)=>(A(c,typeof s!="symbol"?s+"":s,a),a);var u;{let c={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},s=t=>{let[e,n]=t;return e in c?c[e](n):void 0},a=t=>t.map(s),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([e,n])=>[e,s(n)]));customElements.get("astro-island")||customElements.define("astro-island",(u=class extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var f;if(!this.hydrator||!this.isConnected)return;let e=(f=this.parentElement)==null?void 0:f.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let n=this.querySelectorAll("astro-slot"),r={},l=this.querySelectorAll("template[data-astro-template]");for(let o of l){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("data-astro-template")||"default"]=o.innerHTML,o.remove())}for(let o of n){let i=o.closest(this.tagName);i!=null&&i.isSameNode(this)&&(r[o.getAttribute("name")||"default"]=o.innerHTML)}let h;try{h=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(o){let i=this.getAttribute("component-url")||"<unknown>",b=this.getAttribute("component-export");throw b&&(i+=` (export ${b})`),console.error(`[hydrate] Error parsing props for component ${i}`,this.getAttribute("props"),o),o}let p;await this.hydrator(this)(this.Component,h,r,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),n.disconnect(),this.childrenConnectedCallback()},n=new MutationObserver(()=>{var r;((r=this.lastChild)==null?void 0:r.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});n.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),n=this.getAttribute("client");if(Astro[n]===void 0){window.addEventListener(`astro:${n}`,()=>this.start(),{once:!0});return}try{await Astro[n](async()=>{let r=this.getAttribute("renderer-url"),[l,{default:h}]=await Promise.all([import(this.getAttribute("component-url")),r?import(r):()=>()=>{}]),p=this.getAttribute("component-export")||"default";if(!p.includes("."))this.Component=l[p];else{this.Component=l;for(let y of p.split("."))this.Component=this.Component[y]}return this.hydrator=h,this.hydrate},e,this)}catch(r){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,r)}}attributeChangedCallback(){this.hydrate()}},d(u,"observedAttributes",["props"]),u))}})();</script><astro-island uid="1J7UI7" prefix="r1" component-url="/_astro/components.BOxfzsNi.js" component-export="Header" renderer-url="/_astro/client.CdUXcH9K.js" props="{&quot;variant&quot;:[0,&quot;dark&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Comp.Header&quot;,&quot;value&quot;:true}" await-children=""><header class="bg-transparent border-b border-transparent
-        fixed top-0 left-0 w-full ease-in-out duration-300 z-40 overflow-hidden"><nav class="p-4 w-full max-w-6xl mx-auto flex items-center justify-between ease-in-out duration-300"><a href="/"><img src="/_astro/logo-original.BHa2Zh8H.webp" alt="Logo" class="w-32 object-contain"/></a><div class="block text-4xl md:hidden z-50"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-white" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg></div><ul class="text-dark
-            opacity-0 h-0 -top-24
-            z-40 fixed p-6 h-0 w-full flex items-center justify-center flex-col gap-12 left-0 top-0 transition-all duration-100 md:opacity-100 md:relative md:p-0 md:w-auto md:top-0 md:flex-row md:gap-4 md:bg-transparent"><li class="text-inherit"><a href="/product/products" class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary">Investimentos</a></li><li class="text-inherit"><a href="/signin" class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary">Login</a></li><li><button class="bg-primary text-white text-white py-2 px-4 font-medium cursor-pointer ease-in-out duration-100 hover:bg-opacity-70">Cadastre-se</button></li></ul></nav></header><!--astro:end--></astro-island> <section class="h-full pt-28"> <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">  <div class="h-full flex flex-col justify-center"> <div class="grid md:grid-cols-2 gap-6"> <div class="w-full h-96 overflow-hidden flex justify-center"> <img src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg" alt="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket" class="object-cover" width="500" height="500" loading="lazy" decoding="async"> </div> <div class="flex flex-col justify-between"> <div class="space-y-4"> <h2 class="font-bold text-5xl text-dark">Lock and Love Women&#39;s Removable Hooded Faux Leather Moto Biker Jacket</h2> <p> 100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON </p> <div class="grid xs:grid-cols-2 gap-4"> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M17 4h3v16h-3V4zM5 14h3v6H5v-6zm6-5h3v11h-3V9z"></path></svg> <div> <h3 class="text-sm capitalize">Rentabilidade Alvo (TIR)</h3> <span class="text-dark font-bold"> women&#39;s clothing </span> </div> </div> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M560 224h-29.5c-8.8-20-21.6-37.7-37.4-52.5L512 96h-32c-29.4 0-55.4 13.5-73 34.3-7.6-1.1-15.1-2.3-23-2.3H256c-77.4 0-141.9 55-156.8 128H56c-14.8 0-26.5-13.5-23.5-28.8C34.7 215.8 45.4 208 57 208h1c3.3 0 6-2.7 6-6v-20c0-3.3-2.7-6-6-6-28.5 0-53.9 20.4-57.5 48.6C-3.9 258.8 22.7 288 56 288h40c0 52.2 25.4 98.1 64 127.3V496c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-48h128v48c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-80.7c11.8-8.9 22.3-19.4 31.3-31.3H560c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16zm-128 64c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM256 96h128c5.4 0 10.7.4 15.9.8 0-.3.1-.5.1-.8 0-53-43-96-96-96s-96 43-96 96c0 2.1.5 4.1.6 6.2 15.2-3.9 31-6.2 47.4-6.2z"></path></svg> <div> <h3 class="text-sm capitalize">Valor da cota</h3> <span class="text-dark font-bold"> 29.95 </span> </div> </div> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"></path></svg> <div> <h3 class="text-sm capitalize">Valor Captado</h3> <span class="text-dark font-bold"> 29.95 </span> </div> </div> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"></path></svg> <div> <h3 class="text-sm capitalize">Prazo</h3> <span class="text-dark font-bold"> 16 </span> </div> </div> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53A6.95 6.95 0 0 1 12 19z"></path></svg> <div> <h3 class="text-sm capitalize">Pagamento</h3> <span class="text-dark font-bold"> 29.95 </span> </div> </div> <div class="flex items-center gap-3 text-neutral-500"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"></path></svg> <div> <h3 class="text-sm capitalize">Investidores</h3> <span class="text-dark font-bold"> women&#39;s clothing </span> </div> </div> </div> </div> <div class="grid md:grid-cols-2 items-center gap-8 mt-4"> <button class="bg-green-600 text-white text-white py-2 px-4 font-medium cursor-pointer ease-in-out duration-100 hover:bg-opacity-70">Faça sua reserva</button> <a href="" class="uppercase underline text-dark font-medium text-center">
-Falar com especialista
-</a> </div> </div> </div> </div>  </div> </section> <section> <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">  <h2 class="text-dark text-center font-bold text-3xl md:text-4xl mb-10"> Outras oportunidades </h2> <div class="flex justify-center lg:justify-between items-center gap-4 flex-wrap"> <article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20"> <a href="/product/1"> <div class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out
-      group-hover:top-0 group-hover:opacity-100 z-10"> <div class="p-4 w-full absolute bottom-0"> <h3 class="text-4xl font-semibold">Fjallraven ...</h3> <ul class="space-y-2 text-sm"> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Valor da cota</span> <span>R$ 109,95</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Participação</span> <span>0,0091% por cota</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap"> <span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span> </li> </ul> </div> </div> <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0"> <h3 class="text-2xl font-semibold leading-6">Fjallraven ...</h3> <p class="text-sm">Investimento mínimo - R$ 109,95</p> </div> <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="Fjallraven ..." width="1000" height="1000" class="w-full h-full object-cover object-center"> </a> </article><article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20"> <a href="/product/2"> <div class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out
-      group-hover:top-0 group-hover:opacity-100 z-10"> <div class="p-4 w-full absolute bottom-0"> <h3 class="text-4xl font-semibold">Mens Casual...</h3> <ul class="space-y-2 text-sm"> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Valor da cota</span> <span>R$ 22,30</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Participação</span> <span>0,0091% por cota</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap"> <span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span> </li> </ul> </div> </div> <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0"> <h3 class="text-2xl font-semibold leading-6">Mens Casual...</h3> <p class="text-sm">Investimento mínimo - R$ 22,30</p> </div> <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" alt="Mens Casual..." width="1000" height="1000" class="w-full h-full object-cover object-center"> </a> </article><article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20"> <a href="/product/3"> <div class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out
-      group-hover:top-0 group-hover:opacity-100 z-10"> <div class="p-4 w-full absolute bottom-0"> <h3 class="text-4xl font-semibold">Mens Cotton...</h3> <ul class="space-y-2 text-sm"> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Valor da cota</span> <span>R$ 55,99</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"> <span>Participação</span> <span>0,0091% por cota</span> </li> <li class="pb-1 flex justify-between items-center flex-wrap"> <span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span> </li> </ul> </div> </div> <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0"> <h3 class="text-2xl font-semibold leading-6">Mens Cotton...</h3> <p class="text-sm">Investimento mínimo - R$ 55,99</p> </div> <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" alt="Mens Cotton..." width="1000" height="1000" class="w-full h-full object-cover object-center"> </a> </article> </div>  </div> </section> <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">  <astro-island uid="Z1UP9Ty" prefix="r2" component-url="/_astro/components.BOxfzsNi.js" component-export="AboutInvestment" renderer-url="/_astro/client.CdUXcH9K.js" props="{}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Comp.AboutInvestment&quot;,&quot;value&quot;:true}" await-children=""><section class="w-full h-full flex flex-col"><div class="w-full flex justify-start md:justify-center gap-2 border-b border-neutral-400/50 pb-4 text-nowrap
-      text-sm md:text-base mb-4 overflow-x-scroll md:overflow-hidden"><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary
-      border-b border-primary">A Operação</button><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary
-      border-transparent">Finanças</button><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary
-      border-transparent">Informações Essenciais</button><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary
-      border-transparent">Linha do Tempo</button></div><div class="space-y-4 py-4"><h2 class="font-semibold text-2xl">ESTRUTURA DA OPERAÇÃO:</h2><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div></section><!--astro:end--></astro-island>  </div> <section class="h-full bg-dark"> <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">  <div class="h-full w-full flex flex-col justify-center space-y-4"> <h2 class="text-white text-center font-bold text-3xl md:text-4xl mb-10"> Dúvidas Frequentes </h2> <div class="flex justify-center"> <div class="w-full md:w-1/2 space-y-4"> <details class="bg-white rounded-2xl"> <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()"> <h3 class="font-medium capitalize">Como funciona?</h3> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path></svg> </summary> <p class="p-3 text-neutral-900"> Nosso processo é simples e acessível! Você escolhe os produtos em que deseja investir em nossa plataforma, e seleciona a melhor opção de cota para você. Ao aplicar seu capital, você se torna um participante ativo na exportação desses produtos. Conforme as vendas ocorrem, você colhe os lucros mensalmente. </p> </details><details class="bg-white rounded-2xl"> <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()"> <h3 class="font-medium capitalize">Preciso vender os produtos?</h3> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path></svg> </summary> <p class="p-3 text-neutral-900"> Não, como investidor, você não é responsável por vender os produtos. Sua participação se dá por meio do investimento em cotas nas exportações escolhidas. Nossa equipe cuida do processo de venda e distribuição, permitindo que você colha os lucros mensalmente de forma automática e sem a necessidade de envolvimento direto na comercialização dos produtos. Você aproveita os benefícios do investimento enquanto nós gerenciamos as operações. </p> </details><details class="bg-white rounded-2xl"> <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()"> <h3 class="font-medium capitalize">Quais produtos serão ofertados?</h3> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path></svg> </summary> <p class="p-3 text-neutral-900"> Os produtos oferecidos estarão sujeitos a variações, sendo selecionados com base nas melhores oportunidades de mercado no momento. Buscamos constantemente identificar setores promissores e produtos com potencial de retorno para proporcionar a você uma gama diversificada de oportunidades de investimento. </p> </details><details class="bg-white rounded-2xl"> <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()"> <h3 class="font-medium capitalize">Quando posso sacar meus lucros?</h3> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path></svg> </summary> <p class="p-3 text-neutral-900"> Você pode sacar seus lucros mensalmente, conforme as vendas dos produtos exportados são realizadas. Este processo é automatizado, proporcionando a você flexibilidade para acessar seus ganhos de forma regular. A data exata de disponibilidade dos lucros será comunicada, permitindo que você gerencie seus investimentos de acordo com suas necessidades. </p> </details><details class="bg-white rounded-2xl"> <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()"> <h3 class="font-medium capitalize">Vou poder sacar meu capital quando as vendas forem realizadas?</h3> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"></path></svg> </summary> <p class="p-3 text-neutral-900"> Seu capital investido será retornado integralmente quando todos os produtos forem vendidos, acompanhado dos lucros referentes ao período. Esse retorno ocorre de forma pontual, oferecendo a você uma visão clara do momento em que terá acesso ao seu investimento original juntamente com os ganhos acumulados. </p> </details> </div> </div> </div>  </div> </section>  </main> <footer class="bg-white px-4 h-full w-full max-w-6xl mx-auto"> <div class="py-8 grid grid-cols-1 md:grid-cols-3 md:place-items-center gap-8 border-b border-neutral-400"> <div class="space-y-4 self-start"> <img src="/_astro/logo-red.DGygk-Ze_2ctOog.webp" alt="Logo" width="100" height="30" loading="lazy" decoding="async"> <p class="text-neutral-500 text-sm">
-Somos a plataforma que revoluciona o investimento em exportações. Unimos
-        tecnologia e conformidade regulatória para proporcionar aos investidores
-        uma experiência ágil, eficiente e digital.
-</p> </div> <div class="space-y-4 self-start"> <h3 class="text-xl text-neutral-900 font-bold">Institucional</h3> <ul class="space-y-2"> <li class="font-medium text-neutral-500 text-sm"> <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Quem Somos </a> </li><li class="font-medium text-neutral-500 text-sm"> <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Trabalhe conosco </a> </li><li class="font-medium text-neutral-500 text-sm"> <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Termos de Uso </a> </li><li class="font-medium text-neutral-500 text-sm"> <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Política de Privacidade </a> </li> </ul> </div> <div class="space-y-4 self-start"> <h3 class="text-xl text-neutral-900 font-bold">Contato</h3> <p class="text-neutral-500 text-sm">
-Atendimento ao Investidor Acesse o WhatsApp aqui Das 9h às 18h (dias
-        úteis) Parceria de Conteúdo/Imprensa parcerias@rofars.com.br Onde
-        Estamos São Paulo/SP, Avenida Paulista, 1000, conj 00, Pinheiros, CEP
-        00000-000
-</p> </div> </div> <div class="py-8 flex items-center justify-center md:justify-between flex-wrap gap-4 border-b border-neutral-400"> <img src="/_astro/logo-original.BHa2Zh8H_Z1X44oa.webp" alt="Logo" width="140" height="140" loading="lazy" decoding="async"> <div class="flex items-center justify-center flex-wrap gap-3"> <h3 class="text-neutral-600 font-bold">Siga nas redes sociais</h3> <div class="flex items-center justify-center gap-3"> <a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg> </a><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg> </a><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg> </a><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg> </a><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg> </a> </div> </div> </div> <div class="py-8 flex flex-col justify-center items-center gap-4 text-center"> <p class="text-xs leading-6 text-neutral-600">
-https://rofars.com.br, é gerido e operado pela Rofars Tech Desenvolvedora
-      de Programas LTDA ("Rofars"), CNPJ 00.000.000/0001-00, NÃO é uma
-      instituição financeira e NÃO realiza empréstimos empresariais. NÃO atua
-      como empresa de investimentos e NÃO realiza nenhuma espécie de oferta ou
-      recomendação de Títulos e Valores Mobiliários. NÃO está autorizada e NÃO
-      atua na administração e gestão de recursos de terceiros.
-</p> <p class="text-xs leading-6 text-neutral-600">
-Rofars LTDA | CNPJ: 00.000.000/0001-00 Copyright © 2024 - Todos os
-      direitos reservados
-</p> </div> </footer> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    <meta name="generator" content="Astro v4.5.3" />
+    <title>Product</title>
+    <link rel="stylesheet" href="/astro/index.BUuNiJOE.css" />
+  </head>
+  <body>
+    <div class="Toastify"></div>
+    <main>
+      <style>
+        astro-island,
+        astro-slot,
+        astro-static-slot {
+          display: contents;
+        }
+      </style>
+      <script>
+        (() => {
+          var e = async (t) => {
+            await (
+              await t()
+            )();
+          };
+          (self.Astro || (self.Astro = {})).load = e;
+          window.dispatchEvent(new Event("astro:load"));
+        })();
+        (() => {
+          var v = Object.defineProperty;
+          var A = (c, s, a) => (s in c ? v(c, s, { enumerable: !0, configurable: !0, writable: !0, value: a }) : (c[s] = a));
+          var d = (c, s, a) => (A(c, typeof s != "symbol" ? s + "" : s, a), a);
+          var u;
+          {
+            let c = {
+                0: (t) => m(t),
+                1: (t) => a(t),
+                2: (t) => new RegExp(t),
+                3: (t) => new Date(t),
+                4: (t) => new Map(a(t)),
+                5: (t) => new Set(a(t)),
+                6: (t) => BigInt(t),
+                7: (t) => new URL(t),
+                8: (t) => new Uint8Array(t),
+                9: (t) => new Uint16Array(t),
+                10: (t) => new Uint32Array(t),
+              },
+              s = (t) => {
+                let [e, n] = t;
+                return e in c ? c[e](n) : void 0;
+              },
+              a = (t) => t.map(s),
+              m = (t) => (typeof t != "object" || t === null ? t : Object.fromEntries(Object.entries(t).map(([e, n]) => [e, s(n)])));
+            customElements.get("astro-island") ||
+              customElements.define(
+                "astro-island",
+                ((u = class extends HTMLElement {
+                  constructor() {
+                    super(...arguments);
+                    d(this, "Component");
+                    d(this, "hydrator");
+                    d(this, "hydrate", async () => {
+                      var f;
+                      if (!this.hydrator || !this.isConnected) return;
+                      let e = (f = this.parentElement) == null ? void 0 : f.closest("astro-island[ssr]");
+                      if (e) {
+                        e.addEventListener("astro:hydrate", this.hydrate, { once: !0 });
+                        return;
+                      }
+                      let n = this.querySelectorAll("astro-slot"),
+                        r = {},
+                        l = this.querySelectorAll("template[data-astro-template]");
+                      for (let o of l) {
+                        let i = o.closest(this.tagName);
+                        i != null && i.isSameNode(this) && ((r[o.getAttribute("data-astro-template") || "default"] = o.innerHTML), o.remove());
+                      }
+                      for (let o of n) {
+                        let i = o.closest(this.tagName);
+                        i != null && i.isSameNode(this) && (r[o.getAttribute("name") || "default"] = o.innerHTML);
+                      }
+                      let h;
+                      try {
+                        h = this.hasAttribute("props") ? m(JSON.parse(this.getAttribute("props"))) : {};
+                      } catch (o) {
+                        let i = this.getAttribute("component-url") || "<unknown>",
+                          b = this.getAttribute("component-export");
+                        throw (
+                          (b && (i += ` (export ${b})`), console.error(`[hydrate] Error parsing props for component ${i}`, this.getAttribute("props"), o), o)
+                        );
+                      }
+                      let p;
+                      await this.hydrator(this)(this.Component, h, r, { client: this.getAttribute("client") }),
+                        this.removeAttribute("ssr"),
+                        this.dispatchEvent(new CustomEvent("astro:hydrate"));
+                    });
+                    d(this, "unmount", () => {
+                      this.isConnected || this.dispatchEvent(new CustomEvent("astro:unmount"));
+                    });
+                  }
+                  disconnectedCallback() {
+                    document.removeEventListener("astro:after-swap", this.unmount), document.addEventListener("astro:after-swap", this.unmount, { once: !0 });
+                  }
+                  connectedCallback() {
+                    if (!this.hasAttribute("await-children") || document.readyState === "interactive" || document.readyState === "complete")
+                      this.childrenConnectedCallback();
+                    else {
+                      let e = () => {
+                          document.removeEventListener("DOMContentLoaded", e), n.disconnect(), this.childrenConnectedCallback();
+                        },
+                        n = new MutationObserver(() => {
+                          var r;
+                          ((r = this.lastChild) == null ? void 0 : r.nodeType) === Node.COMMENT_NODE &&
+                            this.lastChild.nodeValue === "astro:end" &&
+                            (this.lastChild.remove(), e());
+                        });
+                      n.observe(this, { childList: !0 }), document.addEventListener("DOMContentLoaded", e);
+                    }
+                  }
+                  async childrenConnectedCallback() {
+                    let e = this.getAttribute("before-hydration-url");
+                    e && (await import(e)), this.start();
+                  }
+                  async start() {
+                    let e = JSON.parse(this.getAttribute("opts")),
+                      n = this.getAttribute("client");
+                    if (Astro[n] === void 0) {
+                      window.addEventListener(`astro:${n}`, () => this.start(), { once: !0 });
+                      return;
+                    }
+                    try {
+                      await Astro[n](
+                        async () => {
+                          let r = this.getAttribute("renderer-url"),
+                            [l, { default: h }] = await Promise.all([import(this.getAttribute("component-url")), r ? import(r) : () => () => {}]),
+                            p = this.getAttribute("component-export") || "default";
+                          if (!p.includes(".")) this.Component = l[p];
+                          else {
+                            this.Component = l;
+                            for (let y of p.split(".")) this.Component = this.Component[y];
+                          }
+                          return (this.hydrator = h), this.hydrate;
+                        },
+                        e,
+                        this
+                      );
+                    } catch (r) {
+                      console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`, r);
+                    }
+                  }
+                  attributeChangedCallback() {
+                    this.hydrate();
+                  }
+                }),
+                d(u, "observedAttributes", ["props"]),
+                u)
+              );
+          }
+        })();
+      </script>
+      <astro-island
+        uid="1J7UI7"
+        prefix="r1"
+        component-url="/astro/components.BOxfzsNi.js"
+        component-export="Header"
+        renderer-url="/astro/client.CdUXcH9K.js"
+        props='{"variant":[0,"dark"]}'
+        ssr=""
+        client="load"
+        opts='{"name":"Comp.Header","value":true}'
+        await-children=""
+        ><header class="bg-transparent border-b border-transparent fixed top-0 left-0 w-full ease-in-out duration-300 z-40 overflow-hidden">
+          <nav class="p-4 w-full max-w-6xl mx-auto flex items-center justify-between ease-in-out duration-300">
+            <a href="/"><img src="/astro/logo-original.BHa2Zh8H.webp" alt="Logo" class="w-32 object-contain" /></a>
+            <div class="block text-4xl md:hidden z-50">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="text-white"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
+              </svg>
+            </div>
+            <ul
+              class="text-dark opacity-0 h-0 -top-24 z-40 fixed p-6 h-0 w-full flex items-center justify-center flex-col gap-12 left-0 top-0 transition-all duration-100 md:opacity-100 md:relative md:p-0 md:w-auto md:top-0 md:flex-row md:gap-4 md:bg-transparent"
+            >
+              <li class="text-inherit">
+                <a href="/product/products" class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary">Investimentos</a>
+              </li>
+              <li class="text-inherit">
+                <a href="/signin" class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary">Login</a>
+              </li>
+              <li>
+                <button class="bg-primary text-white text-white py-2 px-4 font-medium cursor-pointer ease-in-out duration-100 hover:bg-opacity-70">
+                  Cadastre-se
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <!--astro:end--></astro-island
+      >
+      <section class="h-full pt-28">
+        <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">
+          <div class="h-full flex flex-col justify-center">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="w-full h-96 overflow-hidden flex justify-center">
+                <img
+                  src="https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg"
+                  alt="Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket"
+                  class="object-cover"
+                  width="500"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="flex flex-col justify-between">
+                <div class="space-y-4">
+                  <h2 class="font-bold text-5xl text-dark">Lock and Love Women&#39;s Removable Hooded Faux Leather Moto Biker Jacket</h2>
+                  <p>
+                    100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets
+                    of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT
+                    BLEACH / LINE DRY / DO NOT IRON
+                  </p>
+                  <div class="grid xs:grid-cols-2 gap-4">
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M17 4h3v16h-3V4zM5 14h3v6H5v-6zm6-5h3v11h-3V9z"></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Rentabilidade Alvo (TIR)</h3>
+                        <span class="text-dark font-bold"> women&#39;s clothing </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 576 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M560 224h-29.5c-8.8-20-21.6-37.7-37.4-52.5L512 96h-32c-29.4 0-55.4 13.5-73 34.3-7.6-1.1-15.1-2.3-23-2.3H256c-77.4 0-141.9 55-156.8 128H56c-14.8 0-26.5-13.5-23.5-28.8C34.7 215.8 45.4 208 57 208h1c3.3 0 6-2.7 6-6v-20c0-3.3-2.7-6-6-6-28.5 0-53.9 20.4-57.5 48.6C-3.9 258.8 22.7 288 56 288h40c0 52.2 25.4 98.1 64 127.3V496c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-48h128v48c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-80.7c11.8-8.9 22.3-19.4 31.3-31.3H560c8.8 0 16-7.2 16-16V240c0-8.8-7.2-16-16-16zm-128 64c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM256 96h128c5.4 0 10.7.4 15.9.8 0-.3.1-.5.1-.8 0-53-43-96-96-96s-96 43-96 96c0 2.1.5 4.1.6 6.2 15.2-3.9 31-6.2 47.4-6.2z"
+                        ></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Valor da cota</h3>
+                        <span class="text-dark font-bold"> 29.95 </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"
+                        ></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Valor Captado</h3>
+                        <span class="text-dark font-bold"> 29.95 </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"
+                        ></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Prazo</h3>
+                        <span class="text-dark font-bold"> 16 </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53A6.95 6.95 0 0 1 12 19z"
+                        ></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Pagamento</h3>
+                        <span class="text-dark font-bold"> 29.95 </span>
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-3 text-neutral-500">
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 640 512"
+                        height="1em"
+                        width="1em"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3V245.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5V416c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V389.2C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112h32c24 0 46.2 7.5 64.4 20.3zM448 416V394.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176h32c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2V416c0 17.7-14.3 32-32 32H480c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3V261.7c-10 11.3-16 26.1-16 42.3zm144-42.3v84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2V448c0 17.7-14.3 32-32 32H288c-17.7 0-32-14.3-32-32V405.2c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112h32c61.9 0 112 50.1 112 112z"
+                        ></path>
+                      </svg>
+                      <div>
+                        <h3 class="text-sm capitalize">Investidores</h3>
+                        <span class="text-dark font-bold"> women&#39;s clothing </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid md:grid-cols-2 items-center gap-8 mt-4">
+                  <button class="bg-green-600 text-white text-white py-2 px-4 font-medium cursor-pointer ease-in-out duration-100 hover:bg-opacity-70">
+                    Faça sua reserva
+                  </button>
+                  <a href="" class="uppercase underline text-dark font-medium text-center"> Falar com especialista </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">
+          <h2 class="text-dark text-center font-bold text-3xl md:text-4xl mb-10">Outras oportunidades</h2>
+          <div class="flex justify-center lg:justify-between items-center gap-4 flex-wrap">
+            <article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20">
+              <a href="/product/1">
+                <div
+                  class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out group-hover:top-0 group-hover:opacity-100 z-10"
+                >
+                  <div class="p-4 w-full absolute bottom-0">
+                    <h3 class="text-4xl font-semibold">Fjallraven ...</h3>
+                    <ul class="space-y-2 text-sm">
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"><span>Valor da cota</span> <span>R$ 109,95</span></li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white">
+                        <span>Participação</span> <span>0,0091% por cota</span>
+                      </li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap"><span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0">
+                  <h3 class="text-2xl font-semibold leading-6">Fjallraven ...</h3>
+                  <p class="text-sm">Investimento mínimo - R$ 109,95</p>
+                </div>
+                <img
+                  src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                  alt="Fjallraven ..."
+                  width="1000"
+                  height="1000"
+                  class="w-full h-full object-cover object-center"
+                />
+              </a>
+            </article>
+            <article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20">
+              <a href="/product/2">
+                <div
+                  class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out group-hover:top-0 group-hover:opacity-100 z-10"
+                >
+                  <div class="p-4 w-full absolute bottom-0">
+                    <h3 class="text-4xl font-semibold">Mens Casual...</h3>
+                    <ul class="space-y-2 text-sm">
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"><span>Valor da cota</span> <span>R$ 22,30</span></li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white">
+                        <span>Participação</span> <span>0,0091% por cota</span>
+                      </li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap"><span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0">
+                  <h3 class="text-2xl font-semibold leading-6">Mens Casual...</h3>
+                  <p class="text-sm">Investimento mínimo - R$ 22,30</p>
+                </div>
+                <img
+                  src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  alt="Mens Casual..."
+                  width="1000"
+                  height="1000"
+                  class="w-full h-full object-cover object-center"
+                />
+              </a>
+            </article>
+            <article class="relative w-80 h-80 overflow-hidden group after:absolute after:w-full after:top-0 after:left-0 after:bottom-0 after:bg-black/20">
+              <a href="/product/3">
+                <div
+                  class="w-full h-full opacity-0 absolute top-full left-0 bg-black/70 text-white duration-300 ease-in-out group-hover:top-0 group-hover:opacity-100 z-10"
+                >
+                  <div class="p-4 w-full absolute bottom-0">
+                    <h3 class="text-4xl font-semibold">Mens Cotton...</h3>
+                    <ul class="space-y-2 text-sm">
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white"><span>Valor da cota</span> <span>R$ 55,99</span></li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap border-b border-white">
+                        <span>Participação</span> <span>0,0091% por cota</span>
+                      </li>
+                      <li class="pb-1 flex justify-between items-center flex-wrap"><span>Pagamento</span> <span>R$ 55/Mês/Cota+IP</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="p-4 absolute bottom-0 z-10 text-white duration-300 ease-in-out group-hover:bottom-full group-hover:opacity-0">
+                  <h3 class="text-2xl font-semibold leading-6">Mens Cotton...</h3>
+                  <p class="text-sm">Investimento mínimo - R$ 55,99</p>
+                </div>
+                <img
+                  src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+                  alt="Mens Cotton..."
+                  width="1000"
+                  height="1000"
+                  class="w-full h-full object-cover object-center"
+                />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">
+        <astro-island
+          uid="Z1UP9Ty"
+          prefix="r2"
+          component-url="/astro/components.BOxfzsNi.js"
+          component-export="AboutInvestment"
+          renderer-url="/astro/client.CdUXcH9K.js"
+          props="{}"
+          ssr=""
+          client="load"
+          opts='{"name":"Comp.AboutInvestment","value":true}'
+          await-children=""
+          ><section class="w-full h-full flex flex-col">
+            <div
+              class="w-full flex justify-start md:justify-center gap-2 border-b border-neutral-400/50 pb-4 text-nowrap text-sm md:text-base mb-4 overflow-x-scroll md:overflow-hidden"
+            >
+              <button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary border-b border-primary">A Operação</button
+              ><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary border-transparent">Finanças</button
+              ><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary border-transparent">Informações Essenciais</button
+              ><button class="py-1 px-6 text-dark rounded-md cursor-pointer border-b-2 hover:border-primary border-transparent">Linha do Tempo</button>
+            </div>
+            <div class="space-y-4 py-4">
+              <h2 class="font-semibold text-2xl">ESTRUTURA DA OPERAÇÃO:</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+                also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+          </section>
+          <!--astro:end--></astro-island
+        >
+      </div>
+      <section class="h-full bg-dark">
+        <div class="px-4 py-14 h-full w-full max-w-6xl mx-auto">
+          <div class="h-full w-full flex flex-col justify-center space-y-4">
+            <h2 class="text-white text-center font-bold text-3xl md:text-4xl mb-10">Dúvidas Frequentes</h2>
+            <div class="flex justify-center">
+              <div class="w-full md:w-1/2 space-y-4">
+                <details class="bg-white rounded-2xl">
+                  <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()">
+                    <h3 class="font-medium capitalize">Como funciona?</h3>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="p-3 text-neutral-900">
+                    Nosso processo é simples e acessível! Você escolhe os produtos em que deseja investir em nossa plataforma, e seleciona a melhor opção de
+                    cota para você. Ao aplicar seu capital, você se torna um participante ativo na exportação desses produtos. Conforme as vendas ocorrem, você
+                    colhe os lucros mensalmente.
+                  </p>
+                </details>
+                <details class="bg-white rounded-2xl">
+                  <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()">
+                    <h3 class="font-medium capitalize">Preciso vender os produtos?</h3>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="p-3 text-neutral-900">
+                    Não, como investidor, você não é responsável por vender os produtos. Sua participação se dá por meio do investimento em cotas nas
+                    exportações escolhidas. Nossa equipe cuida do processo de venda e distribuição, permitindo que você colha os lucros mensalmente de forma
+                    automática e sem a necessidade de envolvimento direto na comercialização dos produtos. Você aproveita os benefícios do investimento enquanto
+                    nós gerenciamos as operações.
+                  </p>
+                </details>
+                <details class="bg-white rounded-2xl">
+                  <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()">
+                    <h3 class="font-medium capitalize">Quais produtos serão ofertados?</h3>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="p-3 text-neutral-900">
+                    Os produtos oferecidos estarão sujeitos a variações, sendo selecionados com base nas melhores oportunidades de mercado no momento. Buscamos
+                    constantemente identificar setores promissores e produtos com potencial de retorno para proporcionar a você uma gama diversificada de
+                    oportunidades de investimento.
+                  </p>
+                </details>
+                <details class="bg-white rounded-2xl">
+                  <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()">
+                    <h3 class="font-medium capitalize">Quando posso sacar meus lucros?</h3>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="p-3 text-neutral-900">
+                    Você pode sacar seus lucros mensalmente, conforme as vendas dos produtos exportados são realizadas. Este processo é automatizado,
+                    proporcionando a você flexibilidade para acessar seus ganhos de forma regular. A data exata de disponibilidade dos lucros será comunicada,
+                    permitindo que você gerencie seus investimentos de acordo com suas necessidades.
+                  </p>
+                </details>
+                <details class="bg-white rounded-2xl">
+                  <summary class="p-3 flex items-center justify-between rounded-xl cursor-pointer text-white bg-secondary" onclick="toggleAccordion()">
+                    <h3 class="font-medium capitalize">Vou poder sacar meu capital quando as vendas forem realizadas?</h3>
+                    <svg
+                      stroke="currentColor"
+                      fill="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="p-3 text-neutral-900">
+                    Seu capital investido será retornado integralmente quando todos os produtos forem vendidos, acompanhado dos lucros referentes ao período.
+                    Esse retorno ocorre de forma pontual, oferecendo a você uma visão clara do momento em que terá acesso ao seu investimento original
+                    juntamente com os ganhos acumulados.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-white px-4 h-full w-full max-w-6xl mx-auto">
+      <div class="py-8 grid grid-cols-1 md:grid-cols-3 md:place-items-center gap-8 border-b border-neutral-400">
+        <div class="space-y-4 self-start">
+          <img src="/astro/logo-red.DGygk-Ze_2ctOog.webp" alt="Logo" width="100" height="30" loading="lazy" decoding="async" />
+          <p class="text-neutral-500 text-sm">
+            Somos a plataforma que revoluciona o investimento em exportações. Unimos tecnologia e conformidade regulatória para proporcionar aos investidores
+            uma experiência ágil, eficiente e digital.
+          </p>
+        </div>
+        <div class="space-y-4 self-start">
+          <h3 class="text-xl text-neutral-900 font-bold">Institucional</h3>
+          <ul class="space-y-2">
+            <li class="font-medium text-neutral-500 text-sm">
+              <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Quem Somos </a>
+            </li>
+            <li class="font-medium text-neutral-500 text-sm">
+              <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Trabalhe conosco </a>
+            </li>
+            <li class="font-medium text-neutral-500 text-sm">
+              <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Termos de Uso </a>
+            </li>
+            <li class="font-medium text-neutral-500 text-sm">
+              <a class="text-inherit font-medium cursor-pointer transition-all duration-100 hover:text-primary" href=""> Política de Privacidade </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-4 self-start">
+          <h3 class="text-xl text-neutral-900 font-bold">Contato</h3>
+          <p class="text-neutral-500 text-sm">
+            Atendimento ao Investidor Acesse o WhatsApp aqui Das 9h às 18h (dias úteis) Parceria de Conteúdo/Imprensa parcerias@rofars.com.br Onde Estamos São
+            Paulo/SP, Avenida Paulista, 1000, conj 00, Pinheiros, CEP 00000-000
+          </p>
+        </div>
+      </div>
+      <div class="py-8 flex items-center justify-center md:justify-between flex-wrap gap-4 border-b border-neutral-400">
+        <img src="/astro/logo-original.BHa2Zh8H_Z1X44oa.webp" alt="Logo" width="140" height="140" loading="lazy" decoding="async" />
+        <div class="flex items-center justify-center flex-wrap gap-3">
+          <h3 class="text-neutral-600 font-bold">Siga nas redes sociais</h3>
+          <div class="flex items-center justify-center gap-3">
+            <a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                ></path>
+              </svg> </a
+            ><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                ></path>
+              </svg> </a
+            ><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg> </a
+            ><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                ></path>
+              </svg> </a
+            ><a class="flex items-center justify-center p-2 bg-tertiary rounded-full text-white cursor-pointer ease-in-out duration-150 hover:opacity-70">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="py-8 flex flex-col justify-center items-center gap-4 text-center">
+        <p class="text-xs leading-6 text-neutral-600">
+          https://rofars.com.br, é gerido e operado pela Rofars Tech Desenvolvedora de Programas LTDA ("Rofars"), CNPJ 00.000.000/0001-00, NÃO é uma instituição
+          financeira e NÃO realiza empréstimos empresariais. NÃO atua como empresa de investimentos e NÃO realiza nenhuma espécie de oferta ou recomendação de
+          Títulos e Valores Mobiliários. NÃO está autorizada e NÃO atua na administração e gestão de recursos de terceiros.
+        </p>
+        <p class="text-xs leading-6 text-neutral-600">Rofars LTDA | CNPJ: 00.000.000/0001-00 Copyright © 2024 - Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
